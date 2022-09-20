@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: cornflowerblue;
+    position: relative;
+    padding-bottom: 2.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #38003c;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e90052;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.logo img {
+    height: 70px;    
+    padding: 0.5em;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+
+}
+
+ul li a {
+    display: flex;
+    margin-right:  40px;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 0.8em;
+    padding-right: 10px;
+    color:  #38003c;
+}
+
+ul li a:hover{
+    color: white;
+}
+
+.wrap {
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(harry-walsh-OvZuM1_WOcQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrap-texto {
+    color: white;
+    width: 50%;
+    text-align: center;
+
+}
+
+h1 {
+    color: white;
+    width: 2800%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 300%;
+}
+
+h2 {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 2em;
+    margin-left: 20.8em;
+}
+
+iframe {
+    display: flex;
+    margin-left: 26.7rem;
+    min-height: 45em;
+    min-width: 45em;
+    padding: 2em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: fit-content;
+    color: white;
+    background-color: #e90052;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+}
+
+svg {
+    align-content: space-between;
+}
+
+@media only screen and  (min-width: 380px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@font-face {
+    font-family: 'PremierLeague';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PremierLeague'), url('Barclays Premier League.woff') format('woff');
+    }
