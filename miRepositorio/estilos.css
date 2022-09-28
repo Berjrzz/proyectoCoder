@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background-color: cornflowerblue;
-    position: relative;
-    padding-bottom: 2.5em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 a {
@@ -57,6 +59,40 @@ ul li a:hover{
     color: white;
 }
 
+.navlink {
+    padding-top: 1rem;
+}
+
+.mainSobre {
+    text-align: center;
+}
+
+.sobrenImagen {
+    height: 30rem;
+    width: 30rem;
+    margin-bottom: 1rem;
+}
+
+.tituloSn {
+    text-align: center; 
+    padding: 10rem;
+    padding-bottom: 1rem; 
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0px 0px 1rem;
+    letter-spacing: 0.1px;
+}
+
+.textoSn {
+    margin: 2rem;
+    padding: 1rem;
+    display: inline-block;
+    max-width: 480px;
+}
+
 .wrap {
     width: 100vw;
     height: 100vw;
@@ -75,6 +111,10 @@ ul li a:hover{
 
 }
 
+.containerForm {
+    padding: 10em;
+}
+
 h1 {
     color: white;
     width: 2800%;
@@ -84,37 +124,173 @@ h1 {
 }
 
 h2 {
+    font-weight: bold;
+}
+
+h3 {
     display: flex;
-    color: white;
+    color: black;
     text-align: center;
     padding: 2em;
-    margin-left: 20.8em;
+    margin-left: 15.4em;
+    font-weight: bold;
 }
+
 
 iframe {
     display: flex;
-    margin-left: 26.7rem;
+    margin-left: 24.7rem;
     min-height: 45em;
     min-width: 45em;
     padding: 2em;
 }
 
 footer {
-    position: fixed;
+    position: absolute
     bottom: 0;
     height: fit-content;
+    padding: 1em;
     color: white;
     background-color: #e90052;
     width: 100%;
-    padding: 1em;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+/* Productos */
+
+.containerProd {
+    margin: 7em;
+    padding: 5em;
+}
+
+.gridProductos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
+
+.items {
+    background-color: rgba(128, 128, 128, 0.554);
+    padding: 1rem;
+}
+
+.productoImagen{
+    width: 100%;
+}
+
+
+.productoInfo {
+
+}
+
+.productoNombre {
+    font-size: 2rem;
+    color: black;
+}
+
+.productoPrecio {
+    font-size: 1.5rem;
+    color: #38003c;
+    font-weight: bold;
+}
+
+.productoNombre, .productoPrecio {
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.nuestrosProd {
+    text-align: center;
+    padding-bottom: 3.5em;
+    font-weight: bold;
+}
+
+/* Formulario */
+
+
+.containerForm {
+    width: 450px;
+    background: #38003c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 160px;
+    margin-bottom: 3em;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px black;
+}
+
+.containerForm p {
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.containerForm a {
+    color:white;
+    text-decoration: none; 
+}
+
+.containerForm a:hover {
+    color: #e90052;
+    text-decoration: underline;
+}
+
+.controls, .selectTeam {
+    width: 100%;
+    background-color: white;
+    padding: 8px;
+    padding-left: 1em;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #e90052;
+    font-size: 15px;
+}
+
+.tituloCont {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+.formTop {
+    font-weight: bold;
+    color: white;
+    font: 18px;
     text-align: center;
 }
 
-svg {
-    align-content: space-between;
+.formReg {
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.btn {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.btn input:hover {
+    color: black;
+}
+
+
 @media only screen and  (min-width: 380px) and (max-width: 767px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -123,10 +299,3 @@ svg {
 
 @media screen and (min-width: 1024px) {
 }
-
-@font-face {
-    font-family: 'PremierLeague';
-    font-style: normal;
-    font-weight: normal;
-    src: local('PremierLeague'), url('Barclays Premier League.woff') format('woff');
-    }
