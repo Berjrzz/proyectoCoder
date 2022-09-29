@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
     height: 100%;
 }
 
@@ -15,7 +14,6 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
 }
 
 a {
@@ -47,11 +45,11 @@ li {
 
 ul li a {
     display: flex;
-    margin-right:  40px;
+    margin-right:  30px;
     justify-content: space-between;
     font-weight: 600;
     font-size: 0.8em;
-    padding-right: 10px;
+    padding-right: 20px;
     color:  #38003c;
 }
 
@@ -60,8 +58,13 @@ ul li a:hover{
 }
 
 .navlink {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
 }
+
+.navlink1 {
+    padding-top: .5rem;
+}
+
 
 .mainSobre {
     text-align: center;
@@ -146,7 +149,6 @@ iframe {
 }
 
 footer {
-    position: absolute
     bottom: 0;
     height: fit-content;
     padding: 1em;
@@ -180,6 +182,7 @@ footer {
 
 .productoImagen{
     width: 100%;
+
 }
 
 
@@ -285,17 +288,76 @@ footer {
 }
 
 
-@media only screen and  (min-width: 380px) and (max-width: 767px) {
-    .grid {
+/* Noticias */
+
+.containerNot {
+    margin: 6em;
+    padding: 5em;
+    margin-left: 2rem;
+}
+
+
+.titleNoticias {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 35px;
+}
+
+.contenidoNoticias {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    gap: 2rem;
+}
+
+.cardNot {
+    padding: 1rem;
+    background-color: rgba(128, 128, 128, 0.146);
+}
+
+.noticiaImagen {
+    width: 568px;
+    height: 376px;
+}
+
+.infoNoticia {
+    text-align: center;
+}
+
+.tituloNot {
+    font-size: 25px;
+    margin-top: 1rem;
+}
+
+.parrafoNot {
+    margin-top: 1rem;
+}
+
+/* Media queries */
+@media only screen (max-width: 768px) {
+    .gridProductos {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
+    .contenidoNoticias {
+        display: grid;
+        grid-template-columns: 250px 250px;
+        gap: 2rem;
+    }
+    .noticiaImagen {
+        width: 100%;
+    }
+    }
+
+    .gridNoticias {
+    }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-
-}
+    .gridNoticias {
+        grid-template-areas: ;
+    }
 
 @media screen and (min-width: 1024px) {
 }
