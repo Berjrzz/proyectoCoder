@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -29,10 +30,12 @@ header {
     width: 100%;
     position: fixed;
     z-index: 100;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif;;
 }
 
+
 .logo img {
+
     height: 70px;    
     padding: 0.5em;
 }
@@ -40,7 +43,6 @@ header {
 li {
     list-style: none;
     display: inline-block;
-
 }
 
 ul li a {
@@ -57,9 +59,6 @@ ul li a:hover{
     color: white;
 }
 
-.navlink {
-    padding-top: 0.5rem;
-}
 
 .navlink1 {
     padding-top: .5rem;
@@ -185,10 +184,6 @@ footer {
 
 }
 
-
-.productoInfo {
-
-}
 
 .productoNombre {
     font-size: 2rem;
@@ -333,6 +328,24 @@ footer {
 }
 
 /* Media queries */
+
+@media only screen (max-width: 360px) {
+    iframe {
+        display: flex;
+        margin-left: 13.7rem;
+        width: 100vw;
+        height: 100vw;
+        align-items: center;
+        justify-content: center;
+        padding: .5em;
+    }
+    .contenidoNoticias {
+        display: grid;
+        grid-template-columns: 250px 250px;
+        gap: 2rem;
+    }
+    }
+
 @media only screen (max-width: 768px) {
     .gridProductos {
         display: grid;
@@ -348,16 +361,18 @@ footer {
         width: 100%;
     }
     }
-
-    .gridNoticias {
+    header {    
+        display: flex;
+        align-items: center;
     }
-
-}
+    ul li a {
+        display: block;
+    }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .gridNoticias {
-        grid-template-areas: ;
     }
 
 @media screen and (min-width: 1024px) {
+}
 }
